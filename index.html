@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        My first Web Page
+    </head>
+    <body>
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+        
+        <div class = "gsproblem">
+          <h1 class = "gsalg"> Create filters</h1>
+          <p>Here you can upload your image and create some fun filters on it.</p>
+          <p>
+            <table>
+              <tr> 
+                <th>
+                Here goes the original picture 
+                </th>
+                <th>
+                  Here goes the modified picture
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <canvas id = "can1" class = "canv2">
+                  </canvas>
+                </td>
+                <td>
+                  <canvas id = "can2" class = "canv2">
+                  </canvas>
+                </td>
+            </table>
+          </p>
+          <p>
+            <b>Uploaded image:</b> <input type = "file" multiple = "false" accept = "image/*" id = "input" onchange = "uploadImage()">
+          </p>
+          <p>
+            <b>Black and white:</b> <input type = "button" value = "Grayscale" onclick = "makeGray()">
+          </p>
+          <p>
+            <b>Color filter:</b> 
+            <input type = "button" value = "Red" onclick = "makeRed()">
+            <input type = "button" value = "Green" onclick = "makeGreen()">
+            <input type = "button" value = "Blue" onclick = "makeBlue()">
+        </p>
+        
+        <p>
+          <b>Blur filter:</b>
+          <input type = "button" value = "Blur" onclick = "makeBlur()">
+        </p>
+        
+        <p>
+          <b>Brightness:</b>
+          <input type = "range" min = "0" max = "100" value = "50" id = "sldr" oninput = "makeBrighter()">
+        </p>
+        <p>
+          <b>Contrast:</b>
+          <input type = "range" min = "0" max = "100" value = "50" id = "sldr2" oninput = "makeContrast()">
+        </p>
+          <p>
+            <input type = "button" value = "Clear all canvases" onclick = "clearCanvases()">
+          </p>
+          <p>
+            <input type = "button" value = "Reset Image" onclick = "resetImage()">
+          </p>
+        </div>
+    </body>
+</html>

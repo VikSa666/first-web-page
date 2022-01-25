@@ -1,0 +1,30 @@
+.canv1{
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    border: 2px solid lightgray;
+  }
+  
+.canv2 {
+    width: 504px;
+    height: 378px;
+    margin: 10px;
+    border: 2px solid lightgray;
+  }
+  
+.gsproblem{
+    background-color: #F4F3B3;
+    border: 2px solid #0B0C4C;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+.gsalg{
+    font-family: "Courier New";
+    color: #0B0C4C;
+    text-align: center;
+  }
+  
+p {
+    margin: 25px;
+  }
